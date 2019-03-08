@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Alvin Ng's Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
@@ -19,11 +19,19 @@
     </header>
     <main>
         <section>
-            <h1>About Me</h1>
+            <h1>Contact</h1>
         </section>
         <section>
-            <img src="assets/images/***" alt="***">
-            <p>Lorem </p>
+            <form>
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" name="form-name" placeholder="Name">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" name="form-email" placeholder="Your email">
+                <label for="form-message">Message</label>
+                <!-- change height-->
+                <input type="text" id="form-message" name="form-message" placeholder="Message">
+                <input type="submit" value="Submit"> <!--float: right-->
+            </form>
         </section>
     </main>
     <footer>
