@@ -10973,11 +10973,11 @@ $jscomp.polyfill = function (e, r, p, m) {
 
         if (this.options.fullWidth) {
           alignment = 'translateX(0)';
-          centerTweenedOpacity = 1;
+          centerTweenedOpacity = 0.8;
         } else {
           alignment = 'translateX(' + (this.el.clientWidth - this.itemWidth) / 2 + 'px) ';
           alignment += 'translateY(' + (this.el.clientHeight - this.itemHeight) / 2 + 'px)';
-          centerTweenedOpacity = 1 - numVisibleOffset * tween;
+          centerTweenedOpacity = 0.8 - numVisibleOffset * tween;
         }
 
         // Set indicator active

@@ -36,10 +36,16 @@ p {
   line-height: 1.5;
 }
 
+#project {
+  max-height: 50%;
+  overflow: scroll;
+}
+
 #visit {
-    bottom: 10%;
-    position: fixed;
-    left: 45%;
+  bottom: 15%;
+  position: fixed;
+  text-align: center;
+  margin-left: -37px;
 }
 
 @font-face {
@@ -67,7 +73,7 @@ p {
 
 .middle-indicator {
   position:absolute;
-  top:50%;
+  top:43%;
 }
 
 .middle-indicator-text {
@@ -87,7 +93,7 @@ a.middle-indicator-text {
   border-radius: 50px; 
 }
 .indicators{
-  visibility: hidden;
+  visibility: visible;
 }
 
 .sidenav-trigger {
