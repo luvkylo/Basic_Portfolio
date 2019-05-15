@@ -36,6 +36,12 @@ p {
   line-height: 1.5;
 }
 
+#visit {
+    bottom: 10%;
+    position: fixed;
+    left: 45%;
+}
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
