@@ -3883,6 +3883,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         var top = this.$el.offset().top;
         var scrollTop = M.getDocumentScrollTop();
         var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
         var windowBottom = scrollTop + windowHeight;
         var percentScrolled = (windowBottom - top) / (containerHeight + windowHeight);
         var parallax = parallaxDist * percentScrolled;
@@ -3890,8 +3891,30 @@ $jscomp.polyfill = function (e, r, p, m) {
         if (!this._enabled) {
           this.$img[0].style.transform = '';
         } else if (this.$el[0].id === "background2") {
-          if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
-            this.$img[0].style.transform = "translate3D(-40%, " + (parallax-750) + "px, 0)";
+          if (windowWidth <= 960 && windowWidth > 850) {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-500) + "px, 0)";
+            }
+          } else if (windowWidth < 850 && windowWidth > 740) {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-360) + "px, 0)";
+            }
+          } else if (windowWidth <= 740 && windowWidth > 650) {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-300) + "px, 0)";
+            }
+          } else if (windowWidth <= 650 && windowWidth > 560) {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-100) + "px, 0)";
+            }
+          } else if (windowWidth <= 560) {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-50) + "px, 0)";
+            }
+          } else {
+            if (bottom+500 > scrollTop && top < scrollTop + windowHeight) {
+              this.$img[0].style.transform = "translate3D(-40%, " + (parallax-750) + "px, 0)";
+            }
           }
         } else if (bottom > scrollTop && top < scrollTop + windowHeight) {
           this.$img[0].style.transform = "translate3D(-50%, " + parallax + "px, 0)";

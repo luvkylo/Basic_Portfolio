@@ -124,6 +124,10 @@ a.middle-indicator-text {
   #index-banner .section {
     top: 0;
   }
+
+  nav .brand-logo {
+    font-size: 1.8rem;
+  }
 }
 
 .icon-block {
