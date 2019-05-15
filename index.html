@@ -1,45 +1,239 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Alvin Ng's Portfolio</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-    crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Alvin's Porfolio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><h1>Alvin Ng</h1></li>
-            <nav>
-                <li><a href="index.html"><i class="fas fa-home"></i>About</a></li>
-                <li><a href="portfolio.html"><i class="fas fa-portrait"></i>Portfolio</a></li>
-                <li><a href="contact.html"><i class="fas fa-address-book"></i>Contact</a></li>
-            </nav>
-        </ul>
-    </header>
-    <main style="background-image: url(assets/images/white-waves.png);">
-        <div class="container">
-            <h1 class="title">About Me</h1>
-            <article class="detail">
-                <img src="assets/images/me.HEIC" alt="***">
-                <p id="first">
-                    I have always thought accounting was my calling. I studied accounting for four years, across two colleges and worked numerous accounting related jobs. However, taking econometric and economic forecasting courses made me realize where my passion lies - Data and coding. 
-                </p> 
-                <p>
-                    My first year at UCLA did not go as planned. I received low grades in my economics and accounting classes, and started doubting my academic capabilities. That is, until I started taking programming and econometric classes and excelling in them. 
-                </p> 
-                <p>
-                    Through this, I realized poor grades do not necessarily translate to failure. Instead, grades are one of the many performance indicators that may reflect where my talent and passion truly rest. Therefore, I decided to shift my career focus to the field of data which I am motivated to learn more about every single day, even if I have to work twice as hard to catch up to others who started on this path earlier.
-                </p>
-            </article>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container nav">
+      <a id="logo-container" href="#" class="brand-logo">Alvin's Portfolio</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="#contact">Contact</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="#works">Works</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="#skills">Skills</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="nav" href="#about">About</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="nav" href="#contact">Contact</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="nav" href="#works">Works</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="nav" href="#skills">Skills</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="nav" href="#about">About</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner about" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">My Portofolio</h1>
+        <div class="row center">
+          <br><br>
+          <h5 class="header col s12 light quote">Demonstrate the possibilities #DareToDream</h5>
         </div>
-    </main>
-    <footer>
-        <small>Copyrighted &copy;</small>
-    </footer>
-</body>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div id="skills" class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Data Analytic</h5>
+
+            <p class="light">I am fluent in time-series modeling, including trend, seasonal, and cycle modeling, ARIMA process, VAR and IRF modeling, exponential smoothing, and cointegration. </p>
+            <p class="light">I am also equipped with basic knowledge on machine learning such as Baysian VAR, Bias/Error Trade, LASSO, Decision Tree, and Bootstrapping</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Programming language</h5>
+
+            <h6 class="light"><b>Data-Analytic:<b></h6>
+            <p class="light">R, Python (Panda, SKlearn, BeautifulSoup library), Stata, Tableau</p>
+            <h6 class="light"><b>Front-end:<b></h6>
+            <p class="light">HTML, CSS, JavaScript, jQuery, D3.js (data-visualization tool), Firebase</p>
+            <h6 class="light"><b>Back-end:<b></h6>
+            <p class="light">Node.js, React, Docker, SQLite, SQLAlchemy, NoSQL, MySQL</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Full-Stack Web Development</h5>
+
+            <p class="light">I am currently taking UCLA extension full-stack web development program to further my knowledge in web development. Please scroll down to see some of my projects.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light quote">"I walk slowly, but I never walk backwards" - Abraham Lincoln</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax" id="background2"><img src="background2.JPG" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container" id="works">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>My Works</h4>
+          <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center middle-indicator">
+              <div class="left">
+                <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+              </div>
+             
+              <div class="right">
+                <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+              </div>
+            </div>
+            <div class="carousel-item blue-grey-text text-darken-3 background-image" style="background-image: url(https://d1dh93s7n44ml6.cloudfront.net/blog/wp-content/uploads/2017/08/07042647/Payroll.jpg);">
+              <h2><em>The Start - Track IVC<em></h2>
+              <p class="container blue-grey-text text-darken-3">I built this website when I was in Community College. During my time as the student government president, I recognized the hassle and frustration clubs has to go through to manage their account. I wanted to build something that will ease such process. I spent my summer learning Docker, Python, PostgreSQL, and html but unfortunately, I wasn't able to delopy it on AWS. 
+
+              Nonetheless, I am proud of my creation.</p>
+              <br><br>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/luvkylo/track-ivc">Visit</a>
+            </div>
+            <div class="carousel-item grey-text text-darken-2 background-image" style="background-image: url(https://scstylecaster.files.wordpress.com/2014/05/takeout-food.jpg);">
+              <h2 class="amber"><em>FoodieTasty<em></h2>
+              <p class="container grey-text text-darken-1 amber" id="project">Using Yelp API to give you food recommendations based on your location and food style. You can even create your own favorite list!</p>
+              <br><br>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://luvkylo.github.io/foodieTasty/">Visit</a>
+            </div>
+            <div class="carousel-item background-image" style="background-image: url(https://tshop.r10s.com/0a7/df4/b238/d1a2/5078/90ba/2992/11c7e8b15854ab3a294904.jpg);">
+              <h2><em>Signed<em></h2>
+              <p class="container white-text" id="project">An ongoing project that aims to provide details on unsigned artist. Through this project, I was able to demonstrate my knowledges on D3.js and firebase authentications.</p>
+              <br><br>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://luvkylo.github.io/signed/">Visit</a>
+            </div>
+            <div class="carousel-item blue-grey-text text-darken-3 background-image" style="background-image: url(https://www.wintellect.com/wp-content/uploads/2018/01/Pandas-Python.jpg);">
+              <h2><em>Data-Analytic: Tailored Brand<em></h2>
+              <p class="container blue-grey-text text-darken-3" id="project">During SCHackathon 2019, I worked on Tailored Brand's customer dataset. I used Python sklearn and panda package to preform regression analysis and build my model. Through bootstrapping, I was able to train my model with 25% accuracy in predicting customer's next purchase!</p>
+              <br><br>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/luvkylo/tailered_brand">Visit</a>
+            </div>
+            <div class="carousel-item grey-text text-lighten-2 background-image" style="background-image: url(background4.png);">
+              <h2><em>Full-Stack & Data-Analytic: Ornus Capital<em></h2>
+              <p class="container grey-text text-lighten-2" id="project">This website truly demonstrate my knowledge and ability as a full-stack developer and as a data-analyst. Working with Node.js, React, Digital Ocean on the front-end, scrapping the internet and building database with Python on the back-end helped me grown tremendously.</p>
+              <br><br>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://ornuscapital.com/">Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light quote">"Limits are meant to be broken, challenges are meant to be overcome"</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div class="container" id="contact">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Me</h4>
+          <p class="center light">Email: alvinhewittalvin@gmail.com</p>
+          <p class="center light">Phone: +1 (949) 899-3711</p>
+          <p class="center light">LinkedIn: <a href="https://www.linkedin.com/in/alvin-ng-ucla2019/">link</a></p>
+          <p class="center light">Github: <a href="https://github.com/luvkylo?tab=repositories">My Repo</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <ul>
+            <div class="col s12 m4"></div>
+            <div class="col s12 m1">
+              <li><a class="white-text nav" href="#about">About</a></li>
+            </div>
+            <div class="col s12 m1">
+              <li><a class="white-text nav" href="#skills">Skills</a></li>
+            </div>
+            <div class="col s12 m1">
+              <li><a class="white-text nav" href="#works">Works</a></li>
+            </div>
+            <div class="col s12 m1">
+              <li><a class="white-text nav" href="#contact">Contact</a></li>
+            </div>
+            <div class="col s12 m4"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
 </html>
