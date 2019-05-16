@@ -24,16 +24,6 @@ p {
   margin-top: 20%;
 }
 
-#background1 {
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-
-#background1 img {
-  -webkit-transform: translateZ(-100px);
-          transform: translateZ(-100px);
-}
-
 .background-image {
   background-position: center;
   background-repeat: no-repeat;
