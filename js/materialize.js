@@ -3894,7 +3894,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           this.$img[0].style.transform = "translate3D(-49%, " + (parallax-100) + "px, 0)";
         } else if (this.$el[0].id === "background1") {
           if (windowWidth <= 992) {
-            this.$img[0].style.transform = "translate3D(-57%, " + (parallax+150) + "px, 0)";
+            this.$img[0].style.transform = "translate3D(-54%, " + (parallax+100) + "px, 0)";
           }
           else {
             this.$img[0].style.transform = "translate3D(-54%, " + (parallax+300) + "px, 0)";
