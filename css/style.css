@@ -28,11 +28,16 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   line-height: 1.5;
+  width: 100%;
+  overflow: hidden;
 }
 
 #project {
   max-height: 50%;
-  overflow: scroll;
+  width: 75%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  box-sizing: content-box;
 }
 
 #visit {
