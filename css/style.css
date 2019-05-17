@@ -28,16 +28,20 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   line-height: 1.5;
-  width: 100%;
-  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 #project {
   max-height: 50%;
   width: 75%;
   overflow-y: scroll;
-  padding-right: 17px;
-  box-sizing: content-box;
+}
+
+#project::-webkit-scrollbar { 
+    display: none; 
 }
 
 #visit {
