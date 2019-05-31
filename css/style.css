@@ -149,3 +149,44 @@ a.middle-indicator-text {
 footer.page-footer {
   margin: 0;
 }
+
+/*.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}*/
+.icon{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.icon:active,.icon:focus,.icon:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+
+a.github:hover
+{
+  background-color:#FEBE89;
+}
+a.linkedin:hover
+{
+  background-color:#007bb6;
+}
